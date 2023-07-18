@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+{% block title %} About us {% endblock %}
+{% block content %}
+
+ <h1 class="title">About Us<span class="red-line"></span></h1>
+
+
+ <div class="container mb-5" style=" background-color: #f3ebd9;">
+    <div class="row mt-5">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center bg-beige" >
+            <p>
+                At our online bookstore, we are dedicated to providing a wide range of books that cater to diverse interests and preferences. From bestselling novels to non-fiction titles, we curate our collection to ensure that readers can find their next great read. Our mission is to inspire, educate, and entertain book lovers worldwide by connecting them with captivating stories and informative content.
+            
+        
+                With our user-friendly platform, you can conveniently explore our extensive catalog and discover books that resonate with you. We believe in the power of community, which is why we offer opportunities for readers to engage with one another through discussions, reviews, and recommendations. Join our growing community and be a part of the conversation. Our commitment to customer satisfaction is unwavering, and our dedicated support team is always available to assist you in any way we can. Thank you for choosing our online bookstore, and we look forward to being a part of your reading journey.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 p-5">
+            <img src="{%static 'images/about_as.jpg'%}" class="img-fluid object-fit-contain" alt="">
+           
+        </div>
+    </div>
+</div>
+<!--why section-->
+ 
+  <hr>
+<section class="why_section layout_padding">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{%static 'images/fast-delivery.png'%}" >
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Fast Delivery
+                        </h5>
+                        <p>
+                            " Order Today and Receive Your Books at Your Doorstep with Speed and Efficiency."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{%static 'images/free.png'%}" >
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Free Shipping
+                        </h5>
+                        <p>
+                            "Free Shipping, Because We Believe in Making Book Shopping Hassle-Free for You!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{%static 'images/premium-quality.png'%}" >
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Best Quality
+                        </h5>
+                        <p>
+                            "Experience the Excellence: Uncompromising Quality for Every Book Lover."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+    {% endblock %}

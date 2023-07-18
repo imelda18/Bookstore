@@ -1,0 +1,250 @@
+ /*...............NAVBAR............................*/
+ .container-fluid{
+    background-color: rgb(244, 232, 205) ;
+ }
+ .navbar{
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+ }
+
+  /*butoni search*/
+.btn-outline-success{
+    border-color: #530202;
+    color: rgb(255, 255, 255);
+    background-color: #813105;
+}
+/*textfield search*/
+.form-control:focus {
+    border-color: #715806;
+    box-shadow: none;
+}
+/*butonin search kur i kalon mausi siper*/
+.btn.btn-outline-success:hover {
+    background-color:  #b03813;
+    border-color: #530202;
+}
+/*per te ndryshuar ngjyren e shkrimit ne navbar*/
+.navbar .navbar-nav .nav-link ,
+.navbar .navbar-brand{
+    color: #744c03;
+    font-size: 17px;   
+}
+/*bookshop item of navbar*/
+.navbar .navbar-brand:first-child {
+    font-size: 30px; 
+    font-family: SansSerif, serif;
+} 
+
+/*.......................................................................................................*/
+
+/* ..........HOME...........*/
+
+/* per foton e pare dhe shkrimin*/
+.cover {
+    position: relative;
+  }
+  
+  .info-cover {
+    z-index: 1;
+  }
+  
+  .cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.85; 
+    
+  }
+  .text-brown {
+    color: #ffebe1;
+    text-shadow: 2px 2px 4px #582500; 
+  }
+  
+  /*WHY section*/
+  .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .img-box img {
+    width: 50px; 
+    height: 50px;
+    
+}
+
+.box {
+    background-color: rgb(235, 219, 197);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.detail-box  {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+}
+.detail-box h5 {
+    font-weight: bold;
+}
+.red-line {
+    display: block;
+    width: 70px;
+    height: 5px;
+    background-color: red;
+    margin: 2px auto 15px;
+}
+
+/* cards*/
+.card-text{
+    font-weight: bold;
+}
+.card {
+   
+    padding: 10px;
+    background-color: #f4ece2;
+   
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: contain;
+    padding-top: 3px;
+    border-radius: 10px;
+    color: #5c3b15;
+}
+
+.card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c3b15;
+}
+
+.card-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5c3b15;
+}
+
+
+.btn-primary {
+    font-size: 16px;
+    background-color:  #cc1919;
+    border: 1.5px solid #c10b0b;
+    border-radius: 20px; 
+    padding: 10px 30px; 
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn.btn-primary:hover {
+    background-color: #f4ece287;
+    color: #8a0f0f;
+    font-weight: bold;
+    border: 1.5px solid #c10b0b;
+}
+
+.card {
+    position: relative;
+  }
+  
+  .card-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(252, 243, 239, 0.8);
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .card-info-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card .btn {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .card:hover .btn {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /*.............................................................................................*/
+
+/* footer */
+.custom-footer {
+  background-color: #f5f2e4; 
+}
+
+.custom-footer h3,
+.custom-footer p,
+.custom-footer a {
+color: #503f04; 
+}
+
+.custom-footer a {
+text-decoration: none; 
+}
+
+/*subscriber*/
+.red-bg{
+
+  background-color: #920606;
+  color: rgb(250, 243, 238);
+}
+
+/*  book.html+ about us per imazhin*/
+.object-fit-contain {
+  object-fit: contain;
+   max-height: 450px;
+   max-width: 100%;
+ }
+
+  /*..............................................................................................*/
+h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 35px;
+    font-family: Serif; 
+    color: #896614;
+}
+
+h2{
+    font-family: Serif;
+    text-align: center;
+    font-size: 20px;
+    color: #5e460d ;
+}
+
+/*horizontal line*/
+hr {
+    color: black;
+    height: 4px;
+    border-style: solid;
+    max-width: 100%;
+   
+}
+body{
+    font-family: serif;
+}
+
+ .title{
+    color: #930b0b;
+ }   
+ 
+ 

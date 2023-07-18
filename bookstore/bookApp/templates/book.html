@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+
+{% block title %} Book {% endblock %}
+
+{% block content %}
+
+<h1 class="title"> {{ book.title }}<span class="red-line"></span> </h1>
+
+
+
+<hr>
+ <div class="container mb-5 " style="background-color: #f3ebd9;">
+  <div class="row mt-5">
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center bg-beige">
+       <img src="{{ book.image.url }}" class="img-fluid object-fit-contain" alt="">
+                </div>
+                <div class="col-12 col-md-6  p-5">
+                    <h1 class="title">Description:</h1>
+                    <p class="lead">{{ book.description }}</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="lead fw-bold" >Author: {{ book.book_author }}</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="lead fw-bold">Category: {{ book.book_category }}</p>
+                        </div>
+                    </div>
+                    <p class="card-price fs-5">
+                        <i class="fa-sharp fa-solid fa-tags"></i> {{ book.price }}
+                    </p>
+                    <a href="https://wa.me/1234567890" class="btn btn-primary btn-lg" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        
+{% endblock %}            

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Footer -->
+<footer class="custom-footer py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                <h3 class="fs-3 fw-bold text-dark"><a href="{% url 'home' %}" >BOOKSTORE</a></h3>
+                <p>Unleash your imagination with our online bookstore. Explore a vast collection of books, from captivating novels to enlightening non-fiction. </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                <div>
+                    <h3>Company</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'aboutus' %}" >About US</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Project</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                <div>
+                    <h3>Books</h3>
+                    <ul class="list-unstyled">
+                        {% for category in categories %}
+                        <li>
+                            <a class="dropdown-item" href="{% url 'category' category.category_id %}">{{ category.category_name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                <div>
+                    <h3>Support</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="{% url 'contact'%}" >Contact</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Fund footer -->

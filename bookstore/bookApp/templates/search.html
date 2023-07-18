@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% block title %} Search Results {% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Search Results for "{{ query }}"</h1>
+    <hr>
+
+    <div class="row no-gutters justify-content-center">
+        {% if books %}
+            {% for book in books %}
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-img-container d-flex align-items-center justify-content-center">
+                            <img src="{{ book.image.url }}" class="card-img-top" alt="{{ book.title }}">
+                            <div class="card-info-overlay">
+                                <div>
+                                    <a href="{% url 'book' book.book_id %}" class="btn btn-primary mt-3">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-5 text-center">{{ book.title }}</h5>
+                            <p class="card-text fs-6 text-center">Author: {{ book.book_author }}</p>
+                            <p class="card-text fs-6 text-center">Category: {{ book.book_category }}</p>
+                            <p class="card-price fs-6 text-center">
+                                <i class="fa-sharp fa-solid fa-tags"></i> {{ book.price }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-12 text-center my-5">
+                <p>No results found.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
